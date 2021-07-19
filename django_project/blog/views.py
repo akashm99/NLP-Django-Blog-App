@@ -84,7 +84,10 @@ def nlp_blog(request):
             elif int(choice) == 4:
                 output = model.QnA(input, question)
             else:
+                statements = ['null', 'Too negative Review(1/5)', 'A negative review(2/5)', 'Neutral statement(3/5)',
+                              'A good review(4/5)', 'Too Positive review(5/5)']
                 output = model.text_sentiment(input)
+                output = statements[int(output)]
             messages.success(request, f"Look for Output Below!")
 
             return render(request, 'blog/nlp.html', {'form': form, 'output': output})
