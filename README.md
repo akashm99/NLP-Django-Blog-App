@@ -8,7 +8,7 @@ Just a fully functional end-end Blog App built in Django with functional NLP Ser
 #### 2. Install requirements(pip install -r requirements.txt)
 #### 3. cd django_project folder and run "python manage.py runserver"
 
-#Soon to be added:
+# Soon to be added:
 #### 1. Custom trained Image captioning model.
 #### 2. Text to speech and speech to text.
 #### 3. DL based spell and grammar check.
